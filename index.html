@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>مولد الميمز</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1> مولد  الصور الميمز</h1>
+
+    <!-- اختيار صورة -->
+    <input type="file" id="imageUpload">
+
+    <!-- النص العلوي -->
+    <input type="text" id="topText" placeholder="النص العلوي">
+
+    <!-- النص السفلي -->
+    <input type="text" id="bottomText" placeholder="النص السفلي">
+
+    <!-- حجم الخط -->
+    <input type="number" id="fontSize" placeholder="حجم الخط" value="40">
+
+    <!-- زر الإنشاء -->
+    <button onclick="generateMeme()">إنشاء الميم</button>
+
+    <!-- Canvas -->
+    <canvas id="canvas"></canvas>
+
+    <!-- تحميل -->
+    <a id="download" download="meme.png">تحميل الصورة</a>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
